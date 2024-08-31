@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Sinh Nhật</title>
+    <style>
+        body {
+            background-color: #ffe6f2;
+            color: #ff66b3;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            overflow: hidden; /* Giúp trái tim không bị cuộn khi di chuyển */
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-top: 50px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #ff66b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.2em;
+        }
+
+        a:hover {
+            background-color: #ff3385;
+        }
+
+        .heart {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #ff3385;
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 50% 75%, 18% 100%, 0% 38%);
+            animation: float 5s infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-1000px) rotate(720deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Anh chúc bé iu sinh nhật vui vẻ</h1>
+    <a href="https://github.com/FordeLuong/CMSN" target="_blank">Visit My GitHub</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
